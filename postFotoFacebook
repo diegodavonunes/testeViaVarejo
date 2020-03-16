@@ -1,0 +1,10 @@
+from selenium import webdriver
+from sensitiveInfo import *
+from PIL import Image
+
+def main():
+    graph = facebook.GraphAPI(passInput='Sua senha de acesso', version='3.8')
+    graph.put_photo(image=open("escolha o caminho para acessar img ", 'rb'),message='Legenda da imagem', profile_id='profile/page id')
+
+if __name__ == "__main__":
+    main()
